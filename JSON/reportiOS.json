@@ -1,0 +1,13 @@
+{
+   "fns_sent": "2014-07-18T11:37:05-07:00",
+   "msg_content": "Testing  FME Reporter test`",
+   "fns_type": "ios",
+   "msg_first_name": "Steve",
+   "fns_op": "report",
+   "msg_subject": "From Steve's Phone",
+   "fns_version": "1.0",
+   "fns_wkt_geom": "POINT (-122.857414 49.137792)",
+   "msg_content_type": "text/plain",
+   "msg_from": "steve.maccabe@safe.com",
+   "msg_last_name": "MacCabe"
+}
