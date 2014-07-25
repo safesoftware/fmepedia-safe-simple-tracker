@@ -1,0 +1,983 @@
+#! <?xml version="1.0" encoding="windows-1252" ?>
+#! <WORKSPACE
+#    
+#    
+#    Command-line to run this workspace:
+#    
+#    
+#    C:\Apps\FME2014\fme.exe Z:\SimpleTrackerDemo_MobileApps\reportupdatesToFMEAlerts.fmw
+#          --SourceDataset_TEXTLINE \\tsclient\Downloads\reportiOS.json
+#    
+#    
+#! PASSWORD=""
+#! ATTR_TYPE_ENCODING="SDF"
+#! VIEW_POSITION="-21 15"
+#! SHOW_INFO_NODES="true"
+#! FME_STROKE_MAX_DEVIATION="0"
+#! BEGIN_PYTHON=""
+#! FME_GEOMETRY_HANDLING="Enhanced"
+#! DESCRIPTION=""
+#! TITLE=""
+#! MAX_LOG_FEATURES="200"
+#! END_TCL=""
+#! FME_BUILD_NUM="14338"
+#! ZOOM_SCALE="100"
+#! CATEGORY=""
+#! REDIRECT_TERMINATORS="NONE"
+#! LEGAL_TERMS_CONDITIONS=""
+#! FME_REPROJECTION_ENGINE="FME"
+#! USAGE=""
+#! END_PYTHON=""
+#! HISTORY=""
+#! FME_DOCUMENT_PRIORGUID="a176ac1a-891d-477f-b25f-22f0a7deac69,6329bbe1-cef6-4b3f-a321-b02f8e8cf4ac,52f3e3ca-7991-4345-a4d9-c7ed3e445a8d,e548b05c-8df5-4672-82ab-ae85e49e2c07,d4b84a59-9c4b-43bb-a3c4-7fdfd3a129a3"
+#! DOC_TOP_LEFT="22 -621"
+#! REQUIREMENTS_KEYWORD=""
+#! SOURCE_ROUTING_FILE=""
+#! DESTINATION_ROUTING_FILE=""
+#! DESTINATION="NONE"
+#! LAST_SAVE_DATE="2014-07-25T11:44:23"
+#! FME_IMPLICIT_CSMAP_REPROJECTION_MODE="Auto"
+#! WORKSPACE_VERSION="1"
+#! SOURCE="NONE"
+#! LAST_SAVE_BUILD="FME(R) 2014 SP2 (20140606 - Build 14338 - WIN32)"
+#! FME_SERVER_SERVICES=""
+#! LOG_MAX_RECORDED_FEATURES="200"
+#! LOG_FILE=""
+#! REQUIREMENTS=""
+#! BEGIN_TCL=""
+#! DOC_EXTENTS="2925 539"
+#! FME_DOCUMENT_GUID="98e84674-7241-47f5-bd26-5ffe90b8f19c"
+#! SHOW_ANNOTATIONS="true"
+#! IGNORE_READER_FAILURE="No"
+#! WARN_INVALID_XFORM_PARAM="Yes"
+#! >
+#! <DATASETS>
+#! <DATASET
+#! IS_SOURCE="true"
+#! ROLE="READER"
+#! FORMAT="TEXTLINE"
+#! DATASET="$(SourceDataset_TEXTLINE)"
+#! KEYWORD="TEXTLINE_1"
+#! MULTI_GEOM_ALLOWED="false"
+#! ATTR_MAX_LENGTH="60"
+#! ATTR_CASE="ANY"
+#! ALLOWED_FEAT_TYPES=""
+#! WRITE_DEFS="false"
+#! DEFLINE_TEMPLATE=""
+#! DEFLINE_ATTRS="false"
+#! EXPOSABLE_ATTRS="fme_text_size number(31,15) fme_rotation number(31,15) fme_feature_type char(50) multi_reader_keyword char(50) multi_reader_id number(11,0) fme_dataset char(50) multi_reader_full_id number(11,0) fme_geometry fme_char(50) multi_reader_type char(50) fme_fill_color char(50) fme_basename char(50) text_line_type char(64) fme_text_string char(50) fme_secondary_axis number(31,15) fme_primary_axis number(31,15) fme_sweep_angle number(31,15) fme_start_angle number(31,15) text_line_number number(11,0) fme_type char(50) text_line_eol char(10) fme_color char(50) text_line_length number(6,0)"
+#! DEFLINE_PARMS=""
+#! ATTR_INDEX_TYPES=""
+#! ATTR_NAME_INVALID_CHARS=""
+#! SUPPORTS_FEATURE_TYPE_FANOUT="true"
+#! ENABLED="true"
+#! DYNAMIC_FEATURE_TYPES_LIST_ON_MERGE="true"
+#! GENERATE_FME_BUILD_NUM="13249"
+#! MAX_FEATURES=""
+#! COORDSYS=""
+#! MIN_FEATURES=""
+#! FEATURE_TYPES=""
+#! START_FEATURE=""
+#! >
+#! <METAFILE_PARAMETER
+#! NAME="MIME_TYPE"
+#! VALUE=""
+#! />
+#! </DATASET>
+#! </DATASETS>
+#! <DATA_TYPES>
+#! <DATA_TYPE
+#! IS_SOURCE="true"
+#! FORMAT_TYPE="char(width)"
+#! FME_TYPE="fme_varchar(width)"
+#! FORMAT="TEXTLINE"
+#! />
+#! <DATA_TYPE
+#! IS_SOURCE="true"
+#! FORMAT_TYPE="char(width)"
+#! FME_TYPE="fme_char(width)"
+#! FORMAT="TEXTLINE"
+#! />
+#! <DATA_TYPE
+#! IS_SOURCE="true"
+#! FORMAT_TYPE="buffer"
+#! FME_TYPE="fme_buffer"
+#! FORMAT="TEXTLINE"
+#! />
+#! <DATA_TYPE
+#! IS_SOURCE="true"
+#! FORMAT_TYPE="char(20)"
+#! FME_TYPE="fme_datetime"
+#! FORMAT="TEXTLINE"
+#! />
+#! <DATA_TYPE
+#! IS_SOURCE="true"
+#! FORMAT_TYPE="char(12)"
+#! FME_TYPE="fme_time"
+#! FORMAT="TEXTLINE"
+#! />
+#! <DATA_TYPE
+#! IS_SOURCE="true"
+#! FORMAT_TYPE="char(8)"
+#! FME_TYPE="fme_date"
+#! FORMAT="TEXTLINE"
+#! />
+#! <DATA_TYPE
+#! IS_SOURCE="true"
+#! FORMAT_TYPE="char(1)"
+#! FME_TYPE="fme_char(width)"
+#! FORMAT="TEXTLINE"
+#! />
+#! <DATA_TYPE
+#! IS_SOURCE="true"
+#! FORMAT_TYPE="number(31,15)"
+#! FME_TYPE="fme_real64"
+#! FORMAT="TEXTLINE"
+#! />
+#! <DATA_TYPE
+#! IS_SOURCE="true"
+#! FORMAT_TYPE="number(15,7)"
+#! FME_TYPE="fme_real32"
+#! FORMAT="TEXTLINE"
+#! />
+#! <DATA_TYPE
+#! IS_SOURCE="true"
+#! FORMAT_TYPE="number(11,0)"
+#! FME_TYPE="fme_int32"
+#! FORMAT="TEXTLINE"
+#! />
+#! <DATA_TYPE
+#! IS_SOURCE="true"
+#! FORMAT_TYPE="number(11,0)"
+#! FME_TYPE="fme_uint32"
+#! FORMAT="TEXTLINE"
+#! />
+#! <DATA_TYPE
+#! IS_SOURCE="true"
+#! FORMAT_TYPE="number(20,0)"
+#! FME_TYPE="fme_int64"
+#! FORMAT="TEXTLINE"
+#! />
+#! <DATA_TYPE
+#! IS_SOURCE="true"
+#! FORMAT_TYPE="number(20,0)"
+#! FME_TYPE="fme_uint64"
+#! FORMAT="TEXTLINE"
+#! />
+#! <DATA_TYPE
+#! IS_SOURCE="true"
+#! FORMAT_TYPE="logical"
+#! FME_TYPE="fme_boolean"
+#! FORMAT="TEXTLINE"
+#! />
+#! <DATA_TYPE
+#! IS_SOURCE="true"
+#! FORMAT_TYPE="number(6,0)"
+#! FME_TYPE="fme_int16"
+#! FORMAT="TEXTLINE"
+#! />
+#! <DATA_TYPE
+#! IS_SOURCE="true"
+#! FORMAT_TYPE="number(6,0)"
+#! FME_TYPE="fme_uint16"
+#! FORMAT="TEXTLINE"
+#! />
+#! <DATA_TYPE
+#! IS_SOURCE="true"
+#! FORMAT_TYPE="number(4,0)"
+#! FME_TYPE="fme_uint8"
+#! FORMAT="TEXTLINE"
+#! />
+#! <DATA_TYPE
+#! IS_SOURCE="true"
+#! FORMAT_TYPE="number(width,decimal)"
+#! FME_TYPE="fme_decimal(width,decimal)"
+#! FORMAT="TEXTLINE"
+#! />
+#! </DATA_TYPES>
+#! <GEOM_TYPES>
+#! <GEOM_TYPE
+#! IS_SOURCE="true"
+#! FORMAT_TYPE="text_line_none"
+#! FME_TYPE="fme_no_geom"
+#! FORMAT="TEXTLINE"
+#! />
+#! <GEOM_TYPE
+#! IS_SOURCE="true"
+#! FORMAT_TYPE="text_line_none"
+#! FME_TYPE="fme_point"
+#! FORMAT="TEXTLINE"
+#! />
+#! <GEOM_TYPE
+#! IS_SOURCE="true"
+#! FORMAT_TYPE="text_line_none"
+#! FME_TYPE="fme_line"
+#! FORMAT="TEXTLINE"
+#! />
+#! <GEOM_TYPE
+#! IS_SOURCE="true"
+#! FORMAT_TYPE="text_line_none"
+#! FME_TYPE="fme_area"
+#! FORMAT="TEXTLINE"
+#! />
+#! <GEOM_TYPE
+#! IS_SOURCE="true"
+#! FORMAT_TYPE="text_line_none"
+#! FME_TYPE="fme_text"
+#! FORMAT="TEXTLINE"
+#! />
+#! <GEOM_TYPE
+#! IS_SOURCE="true"
+#! FORMAT_TYPE="text_line_none"
+#! FME_TYPE="fme_ellipse"
+#! FORMAT="TEXTLINE"
+#! />
+#! <GEOM_TYPE
+#! IS_SOURCE="true"
+#! FORMAT_TYPE="text_line_none"
+#! FME_TYPE="fme_arc"
+#! FORMAT="TEXTLINE"
+#! />
+#! <GEOM_TYPE
+#! IS_SOURCE="true"
+#! FORMAT_TYPE="text_line_none"
+#! FME_TYPE="fme_rectangle"
+#! FORMAT="TEXTLINE"
+#! />
+#! <GEOM_TYPE
+#! IS_SOURCE="true"
+#! FORMAT_TYPE="text_line_none"
+#! FME_TYPE="fme_rounded_rectangle"
+#! FORMAT="TEXTLINE"
+#! />
+#! <GEOM_TYPE
+#! IS_SOURCE="true"
+#! FORMAT_TYPE="text_line_none"
+#! FME_TYPE="fme_collection"
+#! FORMAT="TEXTLINE"
+#! />
+#! <GEOM_TYPE
+#! IS_SOURCE="true"
+#! FORMAT_TYPE="text_line_none"
+#! FME_TYPE="fme_raster"
+#! FORMAT="TEXTLINE"
+#! />
+#! <GEOM_TYPE
+#! IS_SOURCE="true"
+#! FORMAT_TYPE="text_line_none"
+#! FME_TYPE="fme_surface"
+#! FORMAT="TEXTLINE"
+#! />
+#! <GEOM_TYPE
+#! IS_SOURCE="true"
+#! FORMAT_TYPE="text_line_none"
+#! FME_TYPE="fme_solid"
+#! FORMAT="TEXTLINE"
+#! />
+#! <GEOM_TYPE
+#! IS_SOURCE="true"
+#! FORMAT_TYPE="text_line_none"
+#! FME_TYPE="fme_point_cloud"
+#! FORMAT="TEXTLINE"
+#! />
+#! </GEOM_TYPES>
+#! <FEATURE_TYPES>
+#! <FEATURE_TYPE
+#! IS_SOURCE="true"
+#! NODE_NAME="text_line"
+#! IS_EDITABLE="false"
+#! IDENTIFIER="1"
+#! FEAT_GEOMTYPE="text_line_none"
+#! POSITION="22 -84"
+#! ORDER="9"
+#! COLLAPSED="true"
+#! KEYWORD="TEXTLINE_1"
+#! ENABLED="true"
+#! HIDDEN_USER_ATTRS=""
+#! MERGE="false"
+#! MERGE_FILTER=""
+#! MERGE_FILTER_TYPE="FILTER_TYPE_GLOB"
+#! MERGE_FILTER_CASE_SENSITIVE="false"
+#! DYNAMIC_SCHEMA="false"
+#! >
+#! <FEAT_ATTRIBUTE ATTR_NAME="text_line_data" ATTR_TYPE="buffer" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#! </FEATURE_TYPE>
+#! </FEATURE_TYPES>
+#! <FMESERVER>
+#! <SERVICES>
+#! <SERVICE
+#! NAME="fmejobsubmitter"
+#! >
+#! <PROPERTIES>
+#! <PROPERTY
+#! CATEGORY="FMEUSERPROPDATA"
+#! NAME="ADVANCED"
+#! VALUE=""
+#! />
+#! <PROPERTY
+#! CATEGORY="FMEUSERPROPDATA"
+#! NAME="FAILURE_TOPICS"
+#! VALUE=""
+#! />
+#! <PROPERTY
+#! CATEGORY="FMEUSERPROPDATA"
+#! NAME="HTTP_DATASET"
+#! VALUE="TEXTLINE_1"
+#! />
+#! <PROPERTY
+#! CATEGORY="FMEUSERPROPDATA"
+#! NAME="NOTIFICATION_WRITER"
+#! VALUE=""
+#! />
+#! <PROPERTY
+#! CATEGORY="FMEUSERPROPDATA"
+#! NAME="SUCCESS_TOPICS"
+#! VALUE=""
+#! />
+#! </PROPERTIES>
+#! </SERVICE>
+#! <SERVICE
+#! NAME="fmenotification"
+#! >
+#! <PROPERTIES>
+#! <PROPERTY
+#! CATEGORY="FMEUSERPROPDATA"
+#! NAME="ADVANCED"
+#! VALUE=""
+#! />
+#! <PROPERTY
+#! CATEGORY="FMEUSERPROPDATA"
+#! NAME="CONTENT_FORMAT"
+#! VALUE="JSON"
+#! />
+#! <PROPERTY
+#! CATEGORY="FMEUSERPROPDATA"
+#! NAME="FAILURE_TOPICS"
+#! VALUE=""
+#! />
+#! <PROPERTY
+#! CATEGORY="FMEUSERPROPDATA"
+#! NAME="HTTP_DATASET"
+#! VALUE="TEXTLINE_1"
+#! />
+#! <PROPERTY
+#! CATEGORY="FMEUSERPROPDATA"
+#! NAME="NOTIFICATION_WRITER"
+#! VALUE=""
+#! />
+#! <PROPERTY
+#! CATEGORY="FMEUSERPROPDATA"
+#! NAME="PUBLISHER"
+#! VALUE=""
+#! />
+#! <PROPERTY
+#! CATEGORY="FMEUSERPROPDATA"
+#! NAME="SUCCESS_TOPICS"
+#! VALUE=""
+#! />
+#! <PROPERTY
+#! CATEGORY="FMEUSERPROPDATA"
+#! NAME="TOPICS_LIST"
+#! VALUE="safe-simple-tracker-update"
+#! />
+#! </PROPERTIES>
+#! </SERVICE>
+#! </SERVICES>
+#! <REPOSITORY
+#! NAME="safe-notification-tutorial"
+#! />
+#! <ITEM
+#! NAME="reportupdatesToFMEAlerts.fmw"
+#! />
+#! </FMESERVER>
+#! <GLOBAL_PARAMETERS>
+#! <GLOBAL_PARAMETER
+#! GUI_LINE="GUI MULTIFILE SourceDataset_TEXTLINE Text/Compressed_Text_Files(*.txt;*.txt.gz)|*.txt;*.txt.gz|Text_Files(*.txt)|*.txt|Compressed_Text_Files(*.txt.gz)|*.txt.gz|All_files(*.*)|*.* Source Text File(s):"
+#! DEFAULT_VALUE="\\tsclient\Downloads\reportiOS.json"
+#! IS_STAND_ALONE="false"
+#! />
+#! </GLOBAL_PARAMETERS>
+#! <COMMENTS>
+#! </COMMENTS>
+#! <CONSTANTS>
+#! </CONSTANTS>
+#! <BOOKMARKS>
+#! </BOOKMARKS>
+#! <TRANSFORMERS>
+#! <TRANSFORMER
+#! IDENTIFIER="2"
+#! TYPE="JSONFlattener"
+#! VERSION="1"
+#! POSITION="574 -94"
+#! ORDER="10"
+#! PARMS_EDITED="true"
+#! ENABLED="true"
+#! >
+#! <OUTPUT_FEAT NAME="OUTPUT"/>
+#! <FEAT_COLLAPSED COLLAPSED="0"/>
+#! <XFORM_ATTR ATTR_NAME="text_line_data" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_PARM PARM_NAME="PREFIX_STRING" PARM_VALUE=""/>
+#! <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="JSONFlattener"/>
+#! <XFORM_PARM PARM_NAME="RECURSIVE" PARM_VALUE="Yes"/>
+#! <XFORM_PARM PARM_NAME="TRANSFORMER_GROUP" PARM_VALUE=""/>
+#! <XFORM_PARM PARM_NAME="PARAMETERS_GROUP" PARM_VALUE=""/>
+#! <XFORM_PARM PARM_NAME="JSON_ATTR" PARM_VALUE="text_line_data"/>
+#! </TRANSFORMER>
+#! <TRANSFORMER
+#! IDENTIFIER="3"
+#! TYPE="AttributeExposer"
+#! VERSION="0"
+#! POSITION="554 -331"
+#! ORDER="17"
+#! PARMS_EDITED="true"
+#! ENABLED="true"
+#! >
+#! <OUTPUT_FEAT NAME="OUTPUT"/>
+#! <FEAT_COLLAPSED COLLAPSED="0"/>
+#! <XFORM_ATTR ATTR_NAME="text_line_data" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="fns_op" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="fns_wkt_geom" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="fns_topic" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="fns_type" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="fns_version" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="ios_token" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="gcm_id" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="AttributeExposer"/>
+#! <XFORM_PARM PARM_NAME="ATTR_LIST" PARM_VALUE="fns_op,fns_wkt_geom,fns_topic,fns_type,fns_version,ios_token,gcm_id"/>
+#! </TRANSFORMER>
+#! <TRANSFORMER
+#! IDENTIFIER="6"
+#! TYPE="GeometryReplacer"
+#! VERSION="4"
+#! POSITION="1114 -82"
+#! ORDER="11"
+#! PARMS_EDITED="true"
+#! ENABLED="true"
+#! >
+#! <OUTPUT_FEAT NAME="OUTPUT"/>
+#! <FEAT_COLLAPSED COLLAPSED="0"/>
+#! <XFORM_ATTR ATTR_NAME="text_line_data" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="fns_op" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="fns_wkt_geom" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="fns_topic" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="fns_type" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="fns_version" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="ios_token" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="gcm_id" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_PARM PARM_NAME="SRS_AXIS_ORDER_DISPLAY" PARM_VALUE="&lt;Unused&gt;"/>
+#! <XFORM_PARM PARM_NAME="ATTR" PARM_VALUE="fns_wkt_geom"/>
+#! <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="GeometryReplacer"/>
+#! <XFORM_PARM PARM_NAME="TRANSFORMER_GROUP" PARM_VALUE=""/>
+#! <XFORM_PARM PARM_NAME="OUTPUT_POINT_DISPLAY" PARM_VALUE="&lt;Unused&gt;"/>
+#! <XFORM_PARM PARM_NAME="PARAMETERS_GROUP" PARM_VALUE=""/>
+#! <XFORM_PARM PARM_NAME="KIND_LONG" PARM_VALUE="OGC Well Known Text"/>
+#! </TRANSFORMER>
+#! <TRANSFORMER
+#! IDENTIFIER="10"
+#! TYPE="FeatureReader"
+#! VERSION="4"
+#! POSITION="1137 -355"
+#! ORDER="12"
+#! PARMS_EDITED="true"
+#! ENABLED="true"
+#! >
+#! <OUTPUT_FEAT NAME="safe_notification_tutorial.Subscriber"/>
+#! <FEAT_COLLAPSED COLLAPSED="0"/>
+#! <XFORM_ATTR ATTR_NAME="text_line_data" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="fns_op" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="fns_wkt_geom" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="fns_topic" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="fns_type" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="fns_version" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="ios_token" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="gcm_id" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <OUTPUT_FEAT NAME="&lt;OTHER&gt;"/>
+#! <FEAT_COLLAPSED COLLAPSED="1"/>
+#! <XFORM_ATTR ATTR_NAME="text_line_data" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#! <XFORM_ATTR ATTR_NAME="fns_op" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#! <XFORM_ATTR ATTR_NAME="fns_wkt_geom" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#! <XFORM_ATTR ATTR_NAME="fns_topic" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#! <XFORM_ATTR ATTR_NAME="fns_type" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#! <XFORM_ATTR ATTR_NAME="fns_version" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#! <XFORM_ATTR ATTR_NAME="ios_token" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#! <XFORM_ATTR ATTR_NAME="gcm_id" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#! <OUTPUT_FEAT NAME="INITIATOR"/>
+#! <FEAT_COLLAPSED COLLAPSED="2"/>
+#! <XFORM_ATTR ATTR_NAME="text_line_data" IS_USER_CREATED="false" FEAT_INDEX="2" />
+#! <XFORM_ATTR ATTR_NAME="fns_op" IS_USER_CREATED="false" FEAT_INDEX="2" />
+#! <XFORM_ATTR ATTR_NAME="fns_wkt_geom" IS_USER_CREATED="false" FEAT_INDEX="2" />
+#! <XFORM_ATTR ATTR_NAME="fns_topic" IS_USER_CREATED="false" FEAT_INDEX="2" />
+#! <XFORM_ATTR ATTR_NAME="fns_type" IS_USER_CREATED="false" FEAT_INDEX="2" />
+#! <XFORM_ATTR ATTR_NAME="fns_version" IS_USER_CREATED="false" FEAT_INDEX="2" />
+#! <XFORM_ATTR ATTR_NAME="ios_token" IS_USER_CREATED="false" FEAT_INDEX="2" />
+#! <XFORM_ATTR ATTR_NAME="gcm_id" IS_USER_CREATED="false" FEAT_INDEX="2" />
+#! <XFORM_ATTR ATTR_NAME="_matched_records" IS_USER_CREATED="false" FEAT_INDEX="2" />
+#! <XFORM_PARM PARM_NAME="WHERE" PARM_VALUE=""/>
+#! <XFORM_PARM PARM_NAME="INTERACT" PARM_VALUE="WITHIN"/>
+#! <XFORM_PARM PARM_NAME="FORMAT_DIRECTIVES" PARM_VALUE="META_MACROS,SourceDISABLE_COLLECTION_SPLITTING&lt;comma&gt;yes&lt;comma&gt;SourceUSE_TRUE_POSTGIS_TYPES&lt;comma&gt;yes&lt;comma&gt;SourceHOST&lt;comma&gt;demo.cicwnprtlhsw.us-east-1.rds.amazonaws.com&lt;comma&gt;SourcePORT&lt;comma&gt;5432&lt;comma&gt;SourceUSER_NAME&lt;comma&gt;demo&lt;comma&gt;SourcePASSWORD&lt;comma&gt;fme_decrypt&lt;openparen&gt;MDowfCN8I3xcG3GQ&lt;solidus&gt;TeRRUJUZ5LDPtdvpscbh7Nj9gG&lt;solidus&gt;INBkAGA+fkaDrNbhZtfa3rmkUUrCxKWaAFwiYsKgWJNl&lt;solidus&gt;0mRpxUuP+IT2c+Qhh26JEZtUWAmpuoaQCdQ3ykKWm2zaoAM5MBCGaGEuYe+6AS07&lt;solidus&gt;nLNRJwqp1jdwP1FgVCbXRvZtWfKjEZlNJYQ+EicVc6cv2DxCYJyTljvXwF8mKxenML6FKJiHARQCO8OMJidKKZQJP1SeYIhqB0YrtGw4cGV2ZquQKifvRjB2Tl6wBAWDmeCg+R1jvft1tR17SISyTDv77K+mV80w2aaUSgybbF7coM0BrQPcpehfjlW+YxV73+9mPMFXKQeznZ22T8MJor57O44p8U2NQCw35HiFBs0oVP9VkkY0D&lt;solidus&gt;WzGRevseyX1pIEWJSQSFwkJVhiyXavMDz5E5SEYgTZHfVeGBXCDuIEEbfRRkPU5yD2nw2ZAVimDRD7UQhEEY6PosGqU17He4y35WEfAggQ40+EKuupOQSZRsKotTTqlYGHJtX49ymuKqfyZzOAUSUzDMcj8gfDgzOCcuhw2sK3fJaMszqLQIpzwGAjf7PEImGCsjdZxlTUmWJuuIyQhduRJZWfXGSVKbZ&lt;solidus&gt;sL1an6kPLGLOMGfDcC+jC5SA&lt;solidus&gt;0npvV9qyMbASYECO8lpkwXHmKAGMwJSX3doN8vTidr0V1Ak4vuEqUdgsiHhYGTNMZB7PNLAlukfJv8ka4Zr1ymcq4y4K19dhIRSJKYSqmr7I09PlP7HhqwiqZhj&lt;solidus&gt;giqIN&lt;solidus&gt;NF7rZyH12CaPbyGk5vzqBT2o7iwzXkJwxXTo96443+0kMpAh4GV3urojs3Pq&lt;solidus&gt;QNyLI0clUHw7oy78UFPrZrockFLOHa2CO0u93XiyPSoDSQn04&lt;solidus&gt;Hff+L4&lt;solidus&gt;hSlDYCuNjUTYTatwRuMZvpPsFHlvG&lt;closeparen&gt;&lt;comma&gt;SourceSCHEMALIST&lt;comma&gt;safe_notification_tutorial,METAFILE,POSTGIS,IDLIST,safe_notification_tutorial.Subscriber"/>
+#! <XFORM_PARM PARM_NAME="ENABLE_CACHE" PARM_VALUE="NO"/>
+#! <XFORM_PARM PARM_NAME="FEATURETYPES" PARM_VALUE="safe_notification_tutorial.Subscriber"/>
+#! <XFORM_PARM PARM_NAME="FORMAT_PARAMS" PARM_VALUE="POSTGIS_DISABLE_COLLECTION_SPLITTING,&quot;IGNORE TEXT&quot;,POSTGIS&lt;space&gt;,POSTGIS_USE_TRUE_POSTGIS_TYPES,&quot;IGNORE TEXT&quot;,POSTGIS&lt;space&gt;,POSTGIS_HOST,&quot;OPTIONAL TEXT&quot;,POSTGIS&lt;space&gt;Host:,POSTGIS_PORT,&quot;OPTIONAL INTEGER&quot;,POSTGIS&lt;space&gt;Port:,POSTGIS_USER_NAME,&quot;OPTIONAL TEXT&quot;,POSTGIS&lt;space&gt;Username:,POSTGIS_PASSWORD,&quot;OPTIONAL PASSWORD&quot;,POSTGIS&lt;space&gt;Password:,POSTGIS_SCHEMALIST,&quot;IGNORE TEXT&quot;,POSTGIS&lt;space&gt;Schemas&lt;space&gt;for&lt;space&gt;Table&lt;space&gt;Listing:,POSTGIS_TABLELIST,&quot;IGNORE TEXT&quot;,POSTGIS&lt;space&gt;Table&lt;space&gt;List:"/>
+#! <XFORM_PARM PARM_NAME="POSTGIS_HOST" PARM_VALUE="demo-safe.com"/>
+#! <XFORM_PARM PARM_NAME="COMBINE_GEOM" PARM_VALUE="In case of conflict, keep INITIATOR geometry"/>
+#! <XFORM_PARM PARM_NAME="POSTGIS_TABLELIST" PARM_VALUE="safe_notification_tutorial.Subscriber"/>
+#! <XFORM_PARM PARM_NAME="POSTGIS_USER_NAME" PARM_VALUE="demo_me"/>
+#! <XFORM_PARM PARM_NAME="ATTR_NAME" PARM_VALUE="&lt;Unused&gt;"/>
+#! <XFORM_PARM PARM_NAME="POSTGIS_PASSWORD" PARM_VALUE="fme_decrypt(MDowfCN8I3xcG3GQ/TeRRUJUZ5LDPtdvpscbh7Nj9gG/INBkAGA+fkaDrNbhZtfa3rmkUUrCxKWaAFwiYsKgWJNl/0mRpxUuP+IT2c+Qhh26JEZtUWAmpuoaQCdQ3ykKWm2zaoAM5MBCGaGEuYe+6AS07/nLNRJwqp1jdwP1FgVCbXRvZtWfKjEZlNJYQ+EicVc6cv2DxCYJyTljvXwF8mKxenML6FKJiHARQCO8OMJidKKZQJP1SeYIhqB0YrtGw4cGV2ZquQKifvRjB2Tl6wBAWDmeCg+R1jvft1tR17SISyTDv77K+mV80w2aaUSgybbF7coM0BrQPcpehfjlW+YxV73+9mPMFXKQeznZ22T8MJor57O44p8U2NQCw35HiFBs0oVP9VkkY0D/WzGRevseyX1pIEWJSQSFwkJVhiyXavMDz5E5SEYgTZHfVeGBXCDuIEEbfRRkPU5yD2nw2ZAVimDRD7UQhEEY6PosGqU17He4y35WEfAggQ40+EKuupOQSZRsKotTTqlYGHJtX49ymuKqfyZzOAUSUzDMcj8gfDgzOCcuhw2sK3fJaMszzPZnADUBSc3sV6dCz+ZoxccDSU86MbUyp3QqWEVJvJTnjfaisPqmMXt+WoILc2VVuNjVDpa+e0eIhrNJ51bgrw8ysWMLtfh/TXZEl+xufh+0TnKzJz1R8RIflDZuGmMjKOTTJ0frKxETOTO7dl4bq/GvBNwoJu90HulesuLz5hDYS3AB1onId3euX4CCpRDkehSye8PEvbzSPTsOLnePwO4h/9rR/YceNwS0JP2ACfjgo5KklucFI023JAm8ImdafUexbijx3mAMNKoMLxop6EccAhPysUB7kMd4NvNwZkn+EZrOVCrEeh+3Nb+cqUMdtj0V3tBOePgbGOHepi/eiUrB7BN1CRrD)"/>
+#! <XFORM_PARM PARM_NAME="COMBINE_ATTRS" PARM_VALUE="In case of conflict, keep result attributes"/>
+#! <XFORM_PARM PARM_NAME="CACHE_MSG" PARM_VALUE=""/>
+#! <XFORM_PARM PARM_NAME="POSTGIS_USE_TRUE_POSTGIS_TYPES" PARM_VALUE="yes"/>
+#! <XFORM_PARM PARM_NAME="POSTGIS_PORT" PARM_VALUE="5432"/>
+#! <XFORM_PARM PARM_NAME="CACHE_TIMEOUT_HRS" PARM_VALUE="&lt;Unused&gt;"/>
+#! <XFORM_PARM PARM_NAME="COORDSYS" PARM_VALUE=""/>
+#! <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="FeatureReader"/>
+#! <XFORM_PARM PARM_NAME="SUPPORTED_SPATIAL_INTERACTIONS" PARM_VALUE="ENVELOPE_INTERSECT%INTERSECTS%CONTAINS%CROSSES%DISJOINT%EQUALS%OVERLAPS%TOUCHES%WITHIN"/>
+#! <XFORM_PARM PARM_NAME="DATASET" PARM_VALUE="demo"/>
+#! <XFORM_PARM PARM_NAME="AVAILABLE_FEATURE_TYPES" PARM_VALUE="safe_notification_tutorial.Subscriber"/>
+#! <XFORM_PARM PARM_NAME="ATTRIBUTES" PARM_VALUE="safe_notification_tutorial.Subscriber,&quot;fns_op,fns_version,fns_type,fns_topic,ios_token,gcm_id&quot;"/>
+#! <XFORM_PARM PARM_NAME="POSTGIS_DISABLE_COLLECTION_SPLITTING" PARM_VALUE="yes"/>
+#! <XFORM_PARM PARM_NAME="POSTGIS_SCHEMALIST" PARM_VALUE="safe_notification_tutorial"/>
+#! <XFORM_PARM PARM_NAME="FORMAT" PARM_VALUE="POSTGIS"/>
+#! </TRANSFORMER>
+#! <TRANSFORMER
+#! IDENTIFIER="13"
+#! TYPE="Logger"
+#! VERSION="2"
+#! POSITION="2947 -190"
+#! ORDER="13"
+#! PARMS_EDITED="false"
+#! ENABLED="false"
+#! >
+#! <XFORM_PARM PARM_NAME="MESSAGE" PARM_VALUE="Feature is:"/>
+#! <XFORM_PARM PARM_NAME="FEATURE_TYPE" PARM_VALUE=""/>
+#! <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="Logger_public.Subscriber"/>
+#! <XFORM_PARM PARM_NAME="MAXFEATS" PARM_VALUE="20"/>
+#! <XFORM_PARM PARM_NAME="TRANSFORMER_GROUP" PARM_VALUE=""/>
+#! <XFORM_PARM PARM_NAME="PARAMETERS_GROUP" PARM_VALUE=""/>
+#! <XFORM_PARM PARM_NAME="MAXCOORDS" PARM_VALUE="20"/>
+#! </TRANSFORMER>
+#! <TRANSFORMER
+#! IDENTIFIER="12"
+#! TYPE="FMEServerNotifier"
+#! VERSION="1"
+#! POSITION="2379 -143"
+#! ORDER="14"
+#! PARMS_EDITED="true"
+#! ENABLED="true"
+#! >
+#! <OUTPUT_FEAT NAME="OUTPUT"/>
+#! <FEAT_COLLAPSED COLLAPSED="0"/>
+#! <XFORM_ATTR ATTR_NAME="text_line_data" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="fns_op" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="fns_wkt_geom" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="fns_topic" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="fns_type" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="fns_version" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="ios_token" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="gcm_id" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="publish_topic" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="_result" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="_headers{}.name" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="_headers{}.value" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="_url_contents" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="_http_status_code" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <OUTPUT_FEAT NAME="&lt;REJECTED&gt;"/>
+#! <FEAT_COLLAPSED COLLAPSED="1"/>
+#! <XFORM_ATTR ATTR_NAME="text_line_data" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#! <XFORM_ATTR ATTR_NAME="fns_op" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#! <XFORM_ATTR ATTR_NAME="fns_wkt_geom" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#! <XFORM_ATTR ATTR_NAME="fns_topic" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#! <XFORM_ATTR ATTR_NAME="fns_type" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#! <XFORM_ATTR ATTR_NAME="fns_version" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#! <XFORM_ATTR ATTR_NAME="ios_token" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#! <XFORM_ATTR ATTR_NAME="gcm_id" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#! <XFORM_ATTR ATTR_NAME="publish_topic" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#! <XFORM_ATTR ATTR_NAME="_result" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#! <XFORM_ATTR ATTR_NAME="_error" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#! <XFORM_ATTR ATTR_NAME="_headers{}.name" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#! <XFORM_ATTR ATTR_NAME="_headers{}.value" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#! <XFORM_ATTR ATTR_NAME="_url_contents" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#! <XFORM_ATTR ATTR_NAME="_http_status_code" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#! <XFORM_PARM PARM_NAME="HTTP_AUTH_GROUP" PARM_VALUE=""/>
+#! <XFORM_PARM PARM_NAME="HTTP_UPLOAD_BODY" PARM_VALUE="&lt;at&gt;Value&lt;openparen&gt;_result&lt;closeparen&gt;"/>
+#! <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="FMEServerNotifier"/>
+#! <XFORM_PARM PARM_NAME="HTTP_AUTH_PASSWORD" PARM_VALUE="fme_decrypt(MDowfCN8I3xcG3GQ/TeRRUJUZ5LDPtdvpscbh7Nj9gG/INBkAGA+fkaDrNbhZtfa3rmkUUrCxKWaAFwiYsKgWJNl/0mRpxUuP+IT2c+Qhh26JEZtUWAmpuoaQCdQ3ykKWm2zaoAM5MBCGaGEuYe+6AS07/nLNRJwqp1jdwP1FgVCbXRvZtWfKjEZlNJYQ+EicVc6cv2DxCYJyTljvXwF8mKxenML6FKJiHARQCO8OMJidKKZQJP1SeYIhqB0YrtGw4cGV2ZquQKifvRjB2Tl6wBAWDmeCg+R1jvft1tR17SISyTDv77K+mV80w2aaUSgybbF7coM0BrQPcpehfjlW+YxV73+9mPMFXKQeznZ22T8MJor57O44p8U2NQCw35HiFBs0oVP9VkkY0D/WzGRevseyX1pIEWJSQSFwkJVhiyXavMDz5E5SEYgTZHfVeGBXCDuIEEbfRRkPU5yD2nw2ZAVimDRD7UQhEEY6PosGqU17He4y35WEfAggQ40+EKuupOQSZRsKotTTqlYGHJtX49ymuKqfyZzOAUSUzDMcj8gfDgzOCcuhw2sK3fJaMsz/izt3aYOVzoJSd6/son+ZnxWmudRc4Welg/r+flsDruB418SuOXuShryLL+Cekutpw2cZ9EJbsEv/y7qtNnVT1iq+kgHfDT6Hbrhs7tkcPsS6kAkXUTtT97NxeNYniVCL1c/nxpGhis4b8+mvUVTmtuSn7uDLLUbl0IT952RfSFZ/UFaseCo5J58NJ+Qt0il1nq5mZ9pK+ytPtPQRG4wkrthDXUDs80JbPsxq2BJ+h+UizTBNY0slSPXPw/wOe90X9r9ePRKhWGcgS4bu5Z7Z720fU2QEO+MjULfak47JjYhtJM+CLLXad4wymtsSj5QnywaE2wpqArKgajtZE7dluWZScJrB1WF)"/>
+#! <XFORM_PARM PARM_NAME="HTTP_REQUEST_GROUP" PARM_VALUE=""/>
+#! <XFORM_PARM PARM_NAME="STATUS_CODE_ATTR" PARM_VALUE="_http_status_code"/>
+#! <XFORM_PARM PARM_NAME="TRANSFORMER_GROUP" PARM_VALUE=""/>
+#! <XFORM_PARM PARM_NAME="TOPIC" PARM_VALUE="@Value(publish_topic)"/>
+#! <XFORM_PARM PARM_NAME="HTTP_AUTH_USERNAME" PARM_VALUE="tutorial-author"/>
+#! <XFORM_PARM PARM_NAME="URL" PARM_VALUE="https:&lt;solidus&gt;&lt;solidus&gt;mobiledemo.fmecloud.com"/>
+#! </TRANSFORMER>
+#! <TRANSFORMER
+#! IDENTIFIER="14"
+#! TYPE="AttributeCreator"
+#! VERSION="2"
+#! POSITION="1640 -91"
+#! ORDER="15"
+#! PARMS_EDITED="true"
+#! ENABLED="true"
+#! >
+#! <OUTPUT_FEAT NAME="OUTPUT"/>
+#! <FEAT_COLLAPSED COLLAPSED="0"/>
+#! <XFORM_ATTR ATTR_NAME="text_line_data" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="fns_op" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="fns_wkt_geom" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="fns_topic" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="fns_type" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="fns_version" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="ios_token" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="gcm_id" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="publish_topic" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="PublishTopic"/>
+#! <XFORM_PARM PARM_NAME="ATTR_LIST" PARM_VALUE="publish_topic,&lt;at&gt;Value&lt;openparen&gt;fns_topic&lt;closeparen&gt;-&lt;at&gt;Value&lt;openparen&gt;fns_type&lt;closeparen&gt;"/>
+#! </TRANSFORMER>
+#! <TRANSFORMER
+#! IDENTIFIER="16"
+#! TYPE="JSONTemplater"
+#! VERSION="0"
+#! POSITION="1651 -370"
+#! ORDER="16"
+#! PARMS_EDITED="true"
+#! ENABLED="true"
+#! >
+#! <OUTPUT_FEAT NAME="OUTPUT"/>
+#! <FEAT_COLLAPSED COLLAPSED="0"/>
+#! <XFORM_ATTR ATTR_NAME="text_line_data" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="fns_op" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="fns_wkt_geom" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="fns_topic" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="fns_type" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="fns_version" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="ios_token" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="gcm_id" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="publish_topic" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="_result" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_PARM PARM_NAME="GROUP_BY" PARM_VALUE=""/>
+#! <XFORM_PARM PARM_NAME="RESULT_ATTRIBUTE" PARM_VALUE="_result"/>
+#! <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="JSONTemplater_3"/>
+#! <XFORM_PARM PARM_NAME="CONSECUTIVE_GROUPS" PARM_VALUE="No"/>
+#! <XFORM_PARM PARM_NAME="ROOT_QUERY_FILE" PARM_VALUE="&lt;Unused&gt;"/>
+#! <XFORM_PARM PARM_NAME="TRANSFORMER_GROUP" PARM_VALUE=""/>
+#! <XFORM_PARM PARM_NAME="ROOT_QUERY_EXPR" PARM_VALUE="&lt;opencurly&gt;&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;quote&gt;apns_token&lt;quote&gt;&lt;space&gt;:&lt;space&gt;fme:get-attribute&lt;openparen&gt;&lt;quote&gt;ios_token&lt;quote&gt;&lt;closeparen&gt;&lt;comma&gt;&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;quote&gt;gcm_token&lt;quote&gt;&lt;space&gt;&lt;space&gt;:&lt;space&gt;fme:get-attribute&lt;openparen&gt;&lt;quote&gt;gcm_id&lt;quote&gt;&lt;closeparen&gt;&lt;comma&gt;&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;quote&gt;title&lt;quote&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;:&lt;space&gt;&lt;quote&gt;Safe&lt;space&gt;Simple&lt;space&gt;Tracker&lt;quote&gt;&lt;comma&gt;&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;quote&gt;location&lt;quote&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;:&lt;space&gt;fme:get-attribute&lt;openparen&gt;&lt;quote&gt;fns_wkt_geom&lt;quote&gt;&lt;closeparen&gt;&lt;comma&gt;&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;quote&gt;demo_msg&lt;quote&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;:&lt;space&gt;concat&lt;openparen&gt;&lt;quote&gt;FME&lt;space&gt;Reporter&lt;space&gt;-&lt;space&gt;location&lt;space&gt;Update&lt;space&gt;activity&lt;space&gt;for&lt;space&gt;topic&lt;space&gt;&lt;quote&gt;&lt;comma&gt;&lt;space&gt;&lt;space&gt;fme:get-attribute&lt;openparen&gt;&lt;quote&gt;fns_topic&lt;quote&gt;&lt;closeparen&gt;&lt;comma&gt;&lt;space&gt;&lt;quote&gt;!!&lt;quote&gt;&lt;closeparen&gt;&lt;lf&gt;&lt;closecurly&gt;&lt;lf&gt;"/>
+#! <XFORM_PARM PARM_NAME="PARAMETERS_GROUP" PARM_VALUE=""/>
+#! <XFORM_PARM PARM_NAME="VISIBLE_QUERY_VALIDATE" PARM_VALUE="Yes"/>
+#! <XFORM_PARM PARM_NAME="SUB_TEMPLATE_PARAMS" PARM_VALUE=""/>
+#! </TRANSFORMER>
+#! <TRANSFORMER
+#! IDENTIFIER="20"
+#! TYPE="Logger"
+#! VERSION="2"
+#! POSITION="2344 -621"
+#! ORDER="5e+014"
+#! PARMS_EDITED="false"
+#! ENABLED="true"
+#! >
+#! <XFORM_PARM PARM_NAME="MESSAGE" PARM_VALUE="Feature is:"/>
+#! <XFORM_PARM PARM_NAME="FEATURE_TYPE" PARM_VALUE=""/>
+#! <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="Logger_public.Subscriber_2"/>
+#! <XFORM_PARM PARM_NAME="MAXFEATS" PARM_VALUE="20"/>
+#! <XFORM_PARM PARM_NAME="TRANSFORMER_GROUP" PARM_VALUE=""/>
+#! <XFORM_PARM PARM_NAME="PARAMETERS_GROUP" PARM_VALUE=""/>
+#! <XFORM_PARM PARM_NAME="MAXCOORDS" PARM_VALUE="20"/>
+#! </TRANSFORMER>
+#! <TRANSFORMER
+#! IDENTIFIER="24"
+#! TYPE="Logger"
+#! VERSION="3"
+#! POSITION="2927 -392"
+#! ORDER="5e+014"
+#! PARMS_EDITED="false"
+#! ENABLED="true"
+#! >
+#! <OUTPUT_FEAT NAME="LOGGED"/>
+#! <FEAT_COLLAPSED COLLAPSED="0"/>
+#! <XFORM_ATTR ATTR_NAME="text_line_data" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="fns_op" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="fns_wkt_geom" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="fns_topic" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="fns_type" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="fns_version" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="ios_token" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="gcm_id" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="publish_topic" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="_result" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="_error" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="_headers{}.name" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="_headers{}.value" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="_url_contents" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="_http_status_code" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_PARM PARM_NAME="MESSAGE" PARM_VALUE="Feature is:"/>
+#! <XFORM_PARM PARM_NAME="FEATURE_TYPE" PARM_VALUE=""/>
+#! <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="FMEServerNotifier__Rejected_"/>
+#! <XFORM_PARM PARM_NAME="MAXFEATS" PARM_VALUE="20"/>
+#! <XFORM_PARM PARM_NAME="TRANSFORMER_GROUP" PARM_VALUE=""/>
+#! <XFORM_PARM PARM_NAME="PARAMETERS_GROUP" PARM_VALUE=""/>
+#! <XFORM_PARM PARM_NAME="MAXCOORDS" PARM_VALUE="20"/>
+#! </TRANSFORMER>
+#! </TRANSFORMERS>
+#! <FEAT_LINKS>
+#! <FEAT_LINK
+#! IDENTIFIER="21"
+#! SOURCE_NODE="12"
+#! TARGET_NODE="13"
+#! SOURCE_PORT_DESC="fo 0"
+#! TARGET_PORT_DESC="fi 0"
+#! ENABLED="true"
+#! EXTRA_POINTS=""
+#! />
+#! <FEAT_LINK
+#! IDENTIFIER="4"
+#! SOURCE_NODE="1"
+#! TARGET_NODE="2"
+#! SOURCE_PORT_DESC="-1"
+#! TARGET_PORT_DESC="fi 0"
+#! ENABLED="true"
+#! EXTRA_POINTS=""
+#! />
+#! <FEAT_LINK
+#! IDENTIFIER="5"
+#! SOURCE_NODE="2"
+#! TARGET_NODE="3"
+#! SOURCE_PORT_DESC="fo 0"
+#! TARGET_PORT_DESC="fi 0"
+#! ENABLED="true"
+#! EXTRA_POINTS=""
+#! />
+#! <FEAT_LINK
+#! IDENTIFIER="11"
+#! SOURCE_NODE="6"
+#! TARGET_NODE="10"
+#! SOURCE_PORT_DESC="fo 0"
+#! TARGET_PORT_DESC="fi 0"
+#! ENABLED="true"
+#! EXTRA_POINTS=""
+#! />
+#! <FEAT_LINK
+#! IDENTIFIER="19"
+#! SOURCE_NODE="14"
+#! TARGET_NODE="16"
+#! SOURCE_PORT_DESC="fo 0"
+#! TARGET_PORT_DESC="fi 0"
+#! ENABLED="true"
+#! EXTRA_POINTS=""
+#! />
+#! <FEAT_LINK
+#! IDENTIFIER="22"
+#! SOURCE_NODE="16"
+#! TARGET_NODE="20"
+#! SOURCE_PORT_DESC="fo 0"
+#! TARGET_PORT_DESC="fi 0"
+#! ENABLED="true"
+#! EXTRA_POINTS=""
+#! />
+#! <FEAT_LINK
+#! IDENTIFIER="7"
+#! SOURCE_NODE="3"
+#! TARGET_NODE="6"
+#! SOURCE_PORT_DESC="fo 0"
+#! TARGET_PORT_DESC="fi 0"
+#! ENABLED="true"
+#! EXTRA_POINTS=""
+#! />
+#! <FEAT_LINK
+#! IDENTIFIER="18"
+#! SOURCE_NODE="16"
+#! TARGET_NODE="12"
+#! SOURCE_PORT_DESC="fo 0"
+#! TARGET_PORT_DESC="fi 0"
+#! ENABLED="true"
+#! EXTRA_POINTS=""
+#! />
+#! <FEAT_LINK
+#! IDENTIFIER="23"
+#! SOURCE_NODE="10"
+#! TARGET_NODE="14"
+#! SOURCE_PORT_DESC="fo 0"
+#! TARGET_PORT_DESC="fi 0"
+#! ENABLED="true"
+#! EXTRA_POINTS=""
+#! />
+#! <FEAT_LINK
+#! IDENTIFIER="25"
+#! SOURCE_NODE="12"
+#! TARGET_NODE="24"
+#! SOURCE_PORT_DESC="fo 1"
+#! TARGET_PORT_DESC="fi 0"
+#! ENABLED="true"
+#! EXTRA_POINTS=""
+#! />
+#! </FEAT_LINKS>
+#! <BREAKPOINTS>
+#! </BREAKPOINTS>
+#! <ATTR_LINKS>
+#! </ATTR_LINKS>
+#! <SUBDOCUMENTS>
+#! </SUBDOCUMENTS>
+#! <LOOKUP_TABLES>
+#! </LOOKUP_TABLES>
+#! </WORKSPACE>
+#! 
+GUI IGNORE SourceDataset_TEXTLINE_1,TEXTLINE_IN_READ_WHOLE_FILE_AT_ONCE_TEXTLINE_1,TEXTLINE_IN_READ_BOTTOM_UP_TEXTLINE_1,TEXTLINE_IN_SKIP_LINES_TEXTLINE_1,TEXTLINE_IN_SKIP_FOOTER_TEXTLINE_1,TEXTLINE_IN_ENCODING_TEXTLINE_1
+DEFAULT_MACRO SourceDataset_TEXTLINE \\tsclient\Downloads\reportiOS.json
+GUI MULTIFILE SourceDataset_TEXTLINE Text/Compressed_Text_Files(*.txt;*.txt.gz)|*.txt;*.txt.gz|Text_Files(*.txt)|*.txt|Compressed_Text_Files(*.txt.gz)|*.txt.gz|All_files(*.*)|*.* Source Text File(s):
+INCLUDE [ if {{$(SourceDataset_TEXTLINE)} == {}} { puts_real {Parameter 'SourceDataset_TEXTLINE' must be given a value.}; exit 1; }; ]
+#! START_HEADER
+#! START_WB_HEADER
+READER_TYPE TEXTLINE
+READER_KEYWORD TEXTLINE_1
+READER_GEN_DIRECTIVES SKIP_LINES,0,READ_BOTTOM_UP,NO,SKIP_FOOTER,0,_MERGE_SCHEMAS,YES,READ_WHOLE_FILE_AT_ONCE,YES,ENCODING,
+WRITER_TYPE NULL
+WRITER_KEYWORD NULL_DEST
+NULL_DEST_DATASET null
+#! END_WB_HEADER
+#! START_WB_HEADER
+MACRO WB_KEYWORD "TEXTLINE_1"
+#! END_WB_HEADER
+#! START_SOURCE_HEADER TEXTLINE TEXTLINE_1
+# =====================================================================
+# The following GUI line prompts for a file to be used as the source
+# TextLine file. The user input is stored in a macro, which is then
+# used to define the dataset to be read.
+# The dataset this mapping file was generated from was:
+#! END_SOURCE_HEADER
+#! START_WB_HEADER
+DEFAULT_MACRO SourceDataset
+INCLUDE [ if {{$(SourceDataset)} != ""} {                        \
+ puts {DEFAULT_MACRO SourceDataset_TEXTLINE_1 $(SourceDataset)}     \
+ } ]
+#! END_WB_HEADER
+#! START_SOURCE_HEADER TEXTLINE TEXTLINE_1
+DEFAULT_MACRO SourceDataset_TEXTLINE_1 $(SourceDataset_TEXTLINE)
+GUI MULTIFILE SourceDataset_TEXTLINE_1 Text/Compressed_Text_Files(*.txt;*.txt.gz)|*.txt;*.txt.gz|Text_Files(*.txt)|*.txt|Compressed_Text_Files(*.txt.gz)|*.txt.gz|All_files(*.*)|*.* Source Text File(s):
+DEFAULT_MACRO TEXTLINE_IN_READ_WHOLE_FILE_AT_ONCE_TEXTLINE_1 YES
+TEXTLINE_1_READ_WHOLE_FILE_AT_ONCE "$(TEXTLINE_IN_READ_WHOLE_FILE_AT_ONCE_TEXTLINE_1)"
+GUI ACTIVECHOICE TEXTLINE_IN_READ_WHOLE_FILE_AT_ONCE_TEXTLINE_1 YES,TEXTLINE_IN_READ_BOTTOM_UP,TEXTLINE_IN_SKIP_LINES,TEXTLINE_IN_SKIP_FOOTER%NO Read Whole File at Once:
+DEFAULT_MACRO TEXTLINE_IN_READ_BOTTOM_UP_TEXTLINE_1 NO
+TEXTLINE_1_READ_BOTTOM_UP "$(TEXTLINE_IN_READ_BOTTOM_UP_TEXTLINE_1)"
+GUI CHOICE TEXTLINE_IN_READ_BOTTOM_UP_TEXTLINE_1 Yes%No Read Bottom Up:
+DEFAULT_MACRO TEXTLINE_IN_SKIP_LINES_TEXTLINE_1 0
+TEXTLINE_1_SKIP_LINES "$(TEXTLINE_IN_SKIP_LINES_TEXTLINE_1)"
+GUI OPTIONAL INTEGER TEXTLINE_IN_SKIP_LINES_TEXTLINE_1 Number of Lines to Skip:
+DEFAULT_MACRO TEXTLINE_IN_SKIP_FOOTER_TEXTLINE_1 0
+TEXTLINE_1_SKIP_FOOTER "$(TEXTLINE_IN_SKIP_FOOTER_TEXTLINE_1)"
+GUI OPTIONAL INTEGER TEXTLINE_IN_SKIP_FOOTER_TEXTLINE_1 Number of Footer Lines to Skip:
+# =====================================================================
+# Allows to force the encoding of source text file
+DEFAULT_MACRO TEXTLINE_IN_ENCODING_TEXTLINE_1 
+TEXTLINE_1_ENCODING "$(TEXTLINE_IN_ENCODING_TEXTLINE_1)"
+GUI OPTIONAL STRING_OR_ENCODING TEXTLINE_IN_ENCODING_TEXTLINE_1 UTF-8%UTF-16LE%UTF-16BE%ANSI%BIG5%SJIS%CP437%CP708%CP720%CP737%CP775%CP850%CP852%CP855%CP857%CP860%CP861%CP862%CP863%CP864%CP865%CP866%CP869%CP932%CP936%CP950%CP1250%CP1251%CP1252%CP1253%CP1254%CP1255%CP1256%CP1257%CP1258%ISO8859-1%ISO8859-2%ISO8859-3%ISO8859-4%ISO8859-5%ISO8859-6%ISO8859-7%ISO8859-8%ISO8859-9%ISO8859-13%ISO8859-15 Character Encoding (optional):
+TEXTLINE_1_DATASET "$(SourceDataset_TEXTLINE_1)"
+#! END_SOURCE_HEADER
+#! END_HEADER
+
+LOG_FILENAME "$(FME_MF_DIR)reportupdatesToFMEAlerts.log"
+LOG_APPEND NO
+LOG_MAX_FEATURES 200
+LOG_MAX_RECORDED_FEATURES 200
+FME_REPROJECTION_ENGINE FME
+FME_IMPLICIT_CSMAP_REPROJECTION_MODE Auto
+FME_GEOMETRY_HANDLING Enhanced
+FME_STROKE_MAX_DEVIATION 0
+LOG_FILTER_MASK -1
+DEFAULT_MACRO DATASET_KEYWORD_TEXTLINE_1 TEXTLINE_1
+# -------------------------------------------------------------------------
+
+TEXTLINE_1_READER_META_ATTRIBUTES fme_feature_type
+
+# -------------------------------------------------------------------------
+
+MULTI_READER_CONTINUE_ON_READER_FAILURE No
+
+# -------------------------------------------------------------------------
+
+MACRO WORKSPACE_NAME reportupdatesToFMEAlerts
+MACRO FME_VIEWER_APP fmedatainspector
+# -------------------------------------------------------------------------
+
+INCLUDE [ if {[info exists env(FME_TEMP)] && [file isdirectory $env(FME_TEMP)]} {set gVisualizerTemp $env(FME_TEMP)}  elseif {[info exists env(TEMP)] && [file isdirectory $env(TEMP)]}  {set gVisualizerTemp $env(TEMP)}  elseif { $tcl_platform(platform) == "unix" } {set gVisualizerTemp "/tmp"} else {set gVisualizerTemp c:};  regsub -all {[ ,&]} {$(WORKSPACE_NAME)} {_} wsname; set gVisualizerTemp $gVisualizerTemp/${wsname}_[clock format [clock seconds] -format %H%M%S];  puts "MACRO WORKSPACE_TEMP_DIR $gVisualizerTemp"; 
+MACRO VISUALIZER_FEATURE_FILE $(WORKSPACE_TEMP_DIR)/inspector.ffs
+MACRO VISUALIZER_SCHEMA_FILE $(WORKSPACE_TEMP_DIR)/inspector.fsc
+MACRO VISUALIZER_CREATE_SPATIAL_INDEX YES
+
+# -------------------------------------------------------------------------
+
+Lookup ___KnownFeatureTypes___   text_line yes   "" no
+# -------------------------------------------------------------------------
+
+FACTORY_DEF * TestFactory   FACTORY_NAME "Unexpected Input Remover"   INPUT FEATURE_TYPE *   TEST @Lookup(___KnownFeatureTypes___,@FeatureType()) == yes   OUTPUT PASSED FEATURE_TYPE *
+# -------------------------------------------------------------------------
+
+FACTORY_DEF * TeeFactory    FACTORY_NAME "Source -> Generic"    INPUT FEATURE_TYPE *    OUTPUT FEATURE_TYPE *       @Transform(TEXTLINE,FME_GENERIC,PRESERVE_GEOMETRY)
+DEFAULT_MACRO WB_CURRENT_CONTEXT
+# -------------------------------------------------------------------------
+
+FACTORY_DEF * JSONQueryFactory    FACTORY_NAME JSONFlattener    INPUT  FEATURE_TYPE text_line    MODE FLATTEN    JSON_ATTR text_line_data    EXPLODE_QUERY "json"    RECURSIVE_FLATTEN YES    OUTPUT EXPLODED FEATURE_TYPE JSONFlattener_OUTPUT
+
+# -------------------------------------------------------------------------
+
+# Expose all attributes.  This ensures that if you expose fme_dataset, you will get it.
+
+READER_META_ATTRIBUTES fme_feature_type fme_dataset fme_basename
+FACTORY_DEF * TeeFactory    FACTORY_NAME AttributeExposer    INPUT  FEATURE_TYPE JSONFlattener_OUTPUT    OUTPUT FEATURE_TYPE AttributeExposer_OUTPUT
+
+# -------------------------------------------------------------------------
+
+# First determine which function we are going to be using -- we can do
+# this statically at parse time for efficiency sake
+
+MACRO GeometryReplacer_Function
+INCLUDE [ if {{wkt} == {fmebinary} } {               puts {MACRO GeometryReplacer_Function @Geometry(FROM_ATTRIBUTE_BINARY,fns_wkt_geom) }           } elseif {{wkt} == {fmehex} } {               puts {MACRO GeometryReplacer_Function @Geometry(FROM_ATTRIBUTE_BINARY_HEX,fns_wkt_geom) }           } elseif {{wkt} == {fmexml} } {               puts {MACRO GeometryReplacer_Function @Geometry(FROM_ATTRIBUTE,fns_wkt_geom) }           } elseif {{wkt} == {fmexmlencoded} } {               puts {MACRO GeometryReplacer_Function @Geometry(FROM_ENCODED_STRING,&fns_wkt_geom) }           } elseif {{wkt} == {polyline} } {               puts {MACRO GeometryReplacer_Function @Geometry(FROM_ATTRIBUTE_POLYLINE,fns_wkt_geom) }           } elseif {{wkt} == {wkt} ||                      {wkt} == {wkb} ||                      {wkt} == {wkbhex} } {               puts {MACRO GeometryReplacer_Function @OGCGeometry(from_attribute,wkt,fns_wkt_geom) }           } elseif {{wkt} == {GEOJSON} ||                     {wkt} == {ESRIJSON} } {               puts {MACRO GeometryReplacer_Function @JSONGeometry(FROM_ATTRIBUTE,wkt,fns_wkt_geom) }           } elseif {{wkt} == {GEORSS} } {               puts {MACRO GeometryReplacer_Function @GeoRSSGeometry(FROM_ATTRIBUTE,fns_wkt_geom) }           } elseif {{wkt} == {KML} } {               puts {MACRO GeometryReplacer_Function @KMLGeometry(FROM_ATTRIBUTE,fns_wkt_geom) }           } elseif {{wkt} == {GML} } {               puts {MACRO GeometryReplacer_Function @GMLGeometry(FROM_ATTRIBUTE,fns_wkt_geom,<Unused>) }           } elseif {{wkt} == {geohash} } {               puts {MACRO GeometryReplacer_Function @GeoHash(FROM_ATTRIBUTE,fns_wkt_geom,<Unused>) }           } elseif {{wkt} == {ogeosms} ||                     {wkt} == {geosms}  ||                     {wkt} == {geo}     } {               puts {MACRO GeometryReplacer_Function @OGCGeometry(from_attribute,wkt,fns_wkt_geom) }           }         ]
+FACTORY_DEF * TeeFactory    FACTORY_NAME GeometryReplacer    INPUT  FEATURE_TYPE AttributeExposer_OUTPUT    OUTPUT FEATURE_TYPE GeometryReplacer_OUTPUT         $(GeometryReplacer_Function)
+
+# -------------------------------------------------------------------------
+MACRO FeatureReader_DIRECTIVES DISABLE_COLLECTION_SPLITTING yes USE_TRUE_POSTGIS_TYPES yes HOST demo-safe.com PORT 5432 USER_NAME demo_me PASSWORD fme_decrypt(MDowfCN8I3xcG3GQ/TeRRUJUZ5LDPtdvpscbh7Nj9gG/INBkAGA+fkaDrNbhZtfa3rmkUUrCxKWaAFwiYsKgWJNl/0mRpxUuP+IT2c+Qhh26JEZtUWAmpuoaQCdQ3ykKWm2zaoAM5MBCGaGEuYe+6AS07/nLNRJwqp1jdwP1FgVCbXRvZtWfKjEZlNJYQ+EicVc6cv2DxCYJyTljvXwF8mKxenML6FKJiHARQCO8OMJidKKZQJP1SeYIhqB0YrtGw4cGV2ZquQKifvRjB2Tl6wBAWDmeCg+R1jvft1tR17SISyTDv77K+mV80w2aaUSgybbF7coM0BrQPcpehfjlW+YxV73+9mPMFXKQeznZ22T8MJor57O44p8U2NQCw35HiFBs0oVP9VkkY0D/WzGRevseyX1pIEWJSQSFwkJVhiyXavMDz5E5SEYgTZHfVeGBXCDuIEEbfRRkPU5yD2nw2ZAVimDRD7UQhEEY6PosGqU17He4y35WEfAggQ40+EKuupOQSZRsKotTTqlYGHJtX49ymuKqfyZzOAUSUzDMcj8gfDgzOCcuhw2sK3fJaMszzPZnADUBSc3sV6dCz+ZoxccDSU86MbUyp3QqWEVJvJTnjfaisPqmMXt+WoILc2VVuNjVDpa+e0eIhrNJ51bgrw8ysWMLtfh/TXZEl+xufh+0TnKzJz1R8RIflDZuGmMjKOTTJ0frKxETOTO7dl4bq/GvBNwoJu90HulesuLz5hDYS3AB1onId3euX4CCpRDkehSye8PEvbzSPTsOLnePwO4h/9rR/YceNwS0JP2ACfjgo5KklucFI023JAm8ImdafUexbijx3mAMNKoMLxop6EccAhPysUB7kMd4NvNwZkn+EZrOVCrEeh+3Nb+cqUMdtj0V3tBOePgbGOHepi/eiUrB7BN1CRrD) SCHEMALIST safe_notification_tutorial TABLELIST safe_notification_tutorial.Subscriber
+
+Tcl2 proc FeatureReader_findInListElseDefault { value defaultValue } {    if { [lsearch [split $::FeatureReader_FORMATTEDFEATURETYPES {:}] $value] >= 0} {       return $value    } else {       return $defaultValue    } }
+INCLUDE [if { {WITHIN} == {} } {             puts {MACRO REMOVE_GEOM_FUNC @RemoveGeometry()};             puts {MACRO QUERY_INTERACTION_LINE};          } else {             puts {MACRO REMOVE_GEOM_FUNC};             if { {WITHIN} != {ENVELOPE_INTERSECT} } {                puts {MACRO QUERY_INTERACTION_LINE QUERY_INTERACTION WITHIN};             } else {                puts {MACRO QUERY_INTERACTION_LINE};             }          }         ]
+# This is dynamically parsed when the mapping file is parsed.
+# The purpose is to separate feature types in safe_notification_tutorial.Subscriber
+# by colons so they can be parsed easily
+# If a feature type contains spaces, it will be surrounded
+# by quotes. In this case extra care is required to separate
+# it.
+Tcl2 set featTypes {safe_notification_tutorial.Subscriber};    set curIndex 0;    set inQuote 0;    while { [set ch [string index $featTypes $curIndex]] != {} } {       if { [string compare {\"} $ch] == 0 } {          set featTypes [string replace $featTypes $curIndex $curIndex {}];          set inQuote [expr 1-$inQuote];       } else {          if { [string compare { } $ch] == 0 && !$inQuote } {             set featTypes [string replace $featTypes $curIndex $curIndex {:}];          };          set curIndex [expr $curIndex+1];       }    };    set ::FeatureReader_FORMATTEDFEATURETYPES $featTypes;
+FACTORY_DEF * TeeFactory    FACTORY_NAME FeatureReader_GeometryRemover    INPUT  FEATURE_TYPE GeometryReplacer_OUTPUT    OUTPUT FEATURE_TYPE QueryFactoryInputFeatureType      $(REMOVE_GEOM_FUNC)
+
+FACTORY_DEF * QueryFactory    FACTORY_NAME FeatureReader    INPUT  FEATURE_TYPE QueryFactoryInputFeatureType    $(QUERY_INTERACTION_LINE)    COMBINE_ATTRIBUTES  PREFER_RESULT    COMBINE_GEOMETRY    QUERY_ONLY    ENABLE_CACHE        NO    READER_TYPE         POSTGIS    READER_DATASET      "demo"    READER_IDS          safe_notification_tutorial.Subscriber    READER_DIRECTIVES   META_MACROS,SourceDISABLE_COLLECTION_SPLITTING<comma>yes<comma>SourceUSE_TRUE_POSTGIS_TYPES<comma>yes<comma>SourceHOST<comma>demo.cicwnprtlhsw.us-east-1.rds.amazonaws.com<comma>SourcePORT<comma>5432<comma>SourceUSER_NAME<comma>demo<comma>SourcePASSWORD<comma>fme_decrypt<openparen>MDowfCN8I3xcG3GQ<solidus>TeRRUJUZ5LDPtdvpscbh7Nj9gG<solidus>INBkAGA+fkaDrNbhZtfa3rmkUUrCxKWaAFwiYsKgWJNl<solidus>0mRpxUuP+IT2c+Qhh26JEZtUWAmpuoaQCdQ3ykKWm2zaoAM5MBCGaGEuYe+6AS07<solidus>nLNRJwqp1jdwP1FgVCbXRvZtWfKjEZlNJYQ+EicVc6cv2DxCYJyTljvXwF8mKxenML6FKJiHARQCO8OMJidKKZQJP1SeYIhqB0YrtGw4cGV2ZquQKifvRjB2Tl6wBAWDmeCg+R1jvft1tR17SISyTDv77K+mV80w2aaUSgybbF7coM0BrQPcpehfjlW+YxV73+9mPMFXKQeznZ22T8MJor57O44p8U2NQCw35HiFBs0oVP9VkkY0D<solidus>WzGRevseyX1pIEWJSQSFwkJVhiyXavMDz5E5SEYgTZHfVeGBXCDuIEEbfRRkPU5yD2nw2ZAVimDRD7UQhEEY6PosGqU17He4y35WEfAggQ40+EKuupOQSZRsKotTTqlYGHJtX49ymuKqfyZzOAUSUzDMcj8gfDgzOCcuhw2sK3fJaMszqLQIpzwGAjf7PEImGCsjdZxlTUmWJuuIyQhduRJZWfXGSVKbZ<solidus>sL1an6kPLGLOMGfDcC+jC5SA<solidus>0npvV9qyMbASYECO8lpkwXHmKAGMwJSX3doN8vTidr0V1Ak4vuEqUdgsiHhYGTNMZB7PNLAlukfJv8ka4Zr1ymcq4y4K19dhIRSJKYSqmr7I09PlP7HhqwiqZhj<solidus>giqIN<solidus>NF7rZyH12CaPbyGk5vzqBT2o7iwzXkJwxXTo96443+0kMpAh4GV3urojs3Pq<solidus>QNyLI0clUHw7oy78UFPrZrockFLOHa2CO0u93XiyPSoDSQn04<solidus>Hff+L4<solidus>hSlDYCuNjUTYTatwRuMZvpPsFHlvG<closeparen><comma>SourceSCHEMALIST<comma>safe_notification_tutorial,METAFILE,POSTGIS,IDLIST,safe_notification_tutorial.Subscriber    READER_PARAMS     $(FeatureReader_DIRECTIVES)    OUTPUT RESULT FEATURE_TYPE *      @SupplyAttributes(fme_feature_type,@FeatureType())      @Tcl2("set FME_FeatureType [FeatureReader_findInListElseDefault $FME_FeatureType {<OTHER>}]")      @FeatureType(@Concatenate(FeatureReader,"_",@FeatureType()))      @Transform(POSTGIS,FME_GENERIC)    OUTPUT QUERY FEATURE_TYPE FeatureReader_INITIATOR
+
+FACTORY_DEF * TeeFactory   FACTORY_NAME "FeatureReader <OTHER> Output Nuker"   INPUT FEATURE_TYPE FeatureReader_<OTHER>
+FACTORY_DEF * TeeFactory   FACTORY_NAME "FeatureReader INITIATOR Output Nuker"   INPUT FEATURE_TYPE FeatureReader_INITIATOR
+# -------------------------------------------------------------------------
+
+Tcl2 proc PublishTopic_fb44e89d_2464_47ad_9a45_ce12b3678fbb1_attrSetter { attrList } {     set attrList [string trim $attrList {()}];     set attrs [split $attrList {,} ];     foreach {attrName attrVal} $attrs {         if { [string match {*<at>*} $attrName] == 1 } {             set attrName [FME_Execute EvaluateExpression {STRING} $attrName {PublishTopic}];         } else {             set attrName [FME_DecodeText $attrName];         };         if { [string match {*<at>*} $attrVal] == 1 } {             set attrVal [FME_Execute EvaluateExpression {STRING_ENCODED} $attrVal {PublishTopic}];         };         FME_SetAttribute $attrName [FME_DecodeText $attrVal];     }; };
+
+FACTORY_DEF * TeeFactory    FACTORY_NAME PublishTopic    INPUT  FEATURE_TYPE FeatureReader_safe_notification_tutorial.Subscriber    OUTPUT FEATURE_TYPE PublishTopic_OUTPUT         "@Tcl2( PublishTopic_fb44e89d_2464_47ad_9a45_ce12b3678fbb1_attrSetter {(publish_topic,<at>Value<openparen>fns_topic<closeparen>-<at>Value<openparen>fns_type<closeparen>)} )"
+
+# -------------------------------------------------------------------------
+FACTORY_DEF * XMLTemplaterFactory FACTORY_NAME JSONTemplater_3 INPUT CONTROL_FEATURE FEATURE_TYPE PublishTopic_OUTPUT INPUT DATA_FEATURE FEATURE_TYPE JSONTemplater_3_DataFeatures RESULT_ATTR _result CONSECUTIVE_GROUPS NO BUCKET_ATTR_NAME __xml_templater_bucket__ CONTROL_TEMPLATE_EXPR <opencurly><lf><space><space><space><quote>apns_token<quote><space>:<space>fme:get-attribute<openparen><quote>ios_token<quote><closeparen><comma><lf><space><space><space><quote>gcm_token<quote><space><space>:<space>fme:get-attribute<openparen><quote>gcm_id<quote><closeparen><comma><lf><space><space><space><quote>title<quote><space><space><space><space><space><space>:<space><quote>Safe<space>Simple<space>Tracker<quote><comma><lf><space><space><space><quote>location<quote><space><space><space>:<space>fme:get-attribute<openparen><quote>fns_wkt_geom<quote><closeparen><comma><lf><space><space><space><quote>demo_msg<quote><space><space><space>:<space>concat<openparen><quote>FME<space>Reporter<space>-<space>location<space>Update<space>activity<space>for<space>topic<space><quote><comma><space><space>fme:get-attribute<openparen><quote>fns_topic<quote><closeparen><comma><space><quote>!!<quote><closeparen><lf><closecurly><lf> OUTPUT XML_DOCUMENT FEATURE_TYPE JSONTemplater_3_OUTPUT
+FACTORY_DEF * TeeFactory   FACTORY_NAME "JSONTemplater_3 OUTPUT Splitter"   INPUT FEATURE_TYPE JSONTemplater_3_OUTPUT   OUTPUT FEATURE_TYPE JSONTemplater_3_OUTPUT_0_0cvhQbsmBw4=   OUTPUT FEATURE_TYPE JSONTemplater_3_OUTPUT_1_0cvhQbsmBw4=
+# -------------------------------------------------------------------------
+
+FACTORY_DEF * HTTPFactory    FACTORY_NAME FMEServerNotifier       INPUT  FEATURE_TYPE JSONTemplater_3_OUTPUT_1_0cvhQbsmBw4=    TARGET_URL @Concatenate(https:<solidus><solidus>mobiledemo.fmecloud.com,"/fmerest/notifier/topics/",@Value(publish_topic),"/publish.json")    TARGET_ATTR _url_contents    HTTP_METHOD POST    UPLOAD_BODY "@EvaluateExpression(STRING_ENCODED,<at>Value<openparen>_result<closeparen>,FMEServerNotifier)"    UPLOAD_CONTENT_TYPE text/plain    REQUEST_HEADER ""    AUTH_USERNAME "tutorial-author"    AUTH_PASSWORD "fme_decrypt(MDowfCN8I3xcG3GQ/TeRRUJUZ5LDPtdvpscbh7Nj9gG/INBkAGA+fkaDrNbhZtfa3rmkUUrCxKWaAFwiYsKgWJNl/0mRpxUuP+IT2c+Qhh26JEZtUWAmpuoaQCdQ3ykKWm2zaoAM5MBCGaGEuYe+6AS07/nLNRJwqp1jdwP1FgVCbXRvZtWfKjEZlNJYQ+EicVc6cv2DxCYJyTljvXwF8mKxenML6FKJiHARQCO8OMJidKKZQJP1SeYIhqB0YrtGw4cGV2ZquQKifvRjB2Tl6wBAWDmeCg+R1jvft1tR17SISyTDv77K+mV80w2aaUSgybbF7coM0BrQPcpehfjlW+YxV73+9mPMFXKQeznZ22T8MJor57O44p8U2NQCw35HiFBs0oVP9VkkY0D/WzGRevseyX1pIEWJSQSFwkJVhiyXavMDz5E5SEYgTZHfVeGBXCDuIEEbfRRkPU5yD2nw2ZAVimDRD7UQhEEY6PosGqU17He4y35WEfAggQ40+EKuupOQSZRsKotTTqlYGHJtX49ymuKqfyZzOAUSUzDMcj8gfDgzOCcuhw2sK3fJaMsz/izt3aYOVzoJSd6/son+ZnxWmudRc4Welg/r+flsDruB418SuOXuShryLL+Cekutpw2cZ9EJbsEv/y7qtNnVT1iq+kgHfDT6Hbrhs7tkcPsS6kAkXUTtT97NxeNYniVCL1c/nxpGhis4b8+mvUVTmtuSn7uDLLUbl0IT952RfSFZ/UFaseCo5J58NJ+Qt0il1nq5mZ9pK+ytPtPQRG4wkrthDXUDs80JbPsxq2BJ+h+UizTBNY0slSPXPw/wOe90X9r9ePRKhWGcgS4bu5Z7Z720fU2QEO+MjULfak47JjYhtJM+CLLXad4wymtsSj5QnywaE2wpqArKgajtZE7dluWZScJrB1WF)"    AUTH_METHOD Basic    SINGLE_SIGN_ON No    USE_RESPONSE_ENCODING Yes    RESPONSE_HEADER_LIST_ATTR _headers    STATUS_CODE_ATTR "_http_status_code"    ERROR_ATTR _error    USE_COOKIES No    OUTPUT OUTPUT FEATURE_TYPE FMEServerNotifier_OUTPUT    OUTPUT REJECTED FEATURE_TYPE FMEServerNotifier_<REJECTED>
+
+
+# -------------------------------------------------------------------------
+
+FACTORY_DEF * TeeFactory    FACTORY_NAME FMEServerNotifier__Rejected__Logger    INPUT  FEATURE_TYPE FMEServerNotifier_<REJECTED>    OUTPUT FEATURE_TYPE FMEServerNotifier__Rejected__LOGGED                        @FeatureType("")                  @Log("FMEServerNotifier__Rejected_: Feature is:",20,20)
+
+FACTORY_DEF * TeeFactory   FACTORY_NAME "FMEServerNotifier__Rejected_ LOGGED Output Nuker"   INPUT FEATURE_TYPE FMEServerNotifier__Rejected__LOGGED
+# -------------------------------------------------------------------------
+FACTORY_DEF * TeeFactory   FACTORY_NAME "Logger_public.Subscriber (Disabled) Nuker"   INPUT FEATURE_TYPE FMEServerNotifier_OUTPUT
+# -------------------------------------------------------------------------
+
+FACTORY_DEF * TeeFactory    FACTORY_NAME Logger_public.Subscriber_2_Logger    INPUT  FEATURE_TYPE JSONTemplater_3_OUTPUT_0_0cvhQbsmBw4=    OUTPUT FEATURE_TYPE * @FeatureType("") @Log("Logger_public.Subscriber_2: Feature is:",20,20) @FeatureType(__NUKE_LOGGED__)
+FACTORY_DEF * TeeFactory    FACTORY_NAME Logger_public.Subscriber_2_Nuker    INPUT FEATURE_TYPE __NUKE_LOGGED__
+
+# -------------------------------------------------------------------------
+
+FACTORY_DEF * TestFactory   FACTORY_NAME "Final Output Feature Type Router"   INPUT FEATURE_TYPE *   TEST @Value(__wb_out_feat_type__) != ""   OUTPUT PASSED FEATURE_TYPE *     @FeatureType(@Value(__wb_out_feat_type__))   OUTPUT FAILED FEATURE_TYPE __nuke_me__ @Tcl2("FME_StatMessage 818059 [FME_GetAttribute fme_template_feature_type] 818060 818061 fme_warn")
+# -------------------------------------------------------------------------
+
+FACTORY_DEF * TeeFactory   FACTORY_NAME "Final Output Nuker"   INPUT FEATURE_TYPE __nuke_me__
+
