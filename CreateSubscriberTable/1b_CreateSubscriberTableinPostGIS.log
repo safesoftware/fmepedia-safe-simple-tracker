@@ -1,0 +1,72 @@
+2014-10-31 13:48:59|   1.5|  1.5|INFORM|FME 2015 Beta (20141008 - Build 15194 - WIN64)
+2014-10-31 13:48:59|   1.5|  0.0|INFORM|FME_HOME is 'C:\Apps\FME_15194_64\'
+2014-10-31 13:48:59|   1.5|  0.0|INFORM|FME Desktop Smallworld Edition (floating)
+2014-10-31 13:48:59|   1.5|  0.0|INFORM|Permanent License.
+2014-10-31 13:48:59|   1.5|  0.0|INFORM|Machine host name is: nate
+2014-10-31 13:48:59|   1.5|  0.0|INFORM|START - ProcessID: 9036, peak process memory usage: 42828 kB, current process memory usage: 42828 kB
+2014-10-31 13:48:59|   1.5|  0.0|INFORM|FME Configuration: Command line arguments are `C:\Apps\FME_15194_64\fme.exe' `C:/Users/dvanniekerk/Dropbox (Safe Software Inc.)/git uncommited/fmepedia-safe-simple-tracker/CreateSubscriberTable\wb-xlate-1414788536387_10468' `LOG_STANDARDOUT' `YES' `LogCountServerName' `{bd13f441-890e-4a6d-a22c-d1da3c4ad84e}'
+2014-10-31 13:48:59|   1.7|  0.2|INFORM|Shared folders for formats are : C:\Users\dvanniekerk\Documents\FME\Formats;C:\Apps\FME_15194_64\datasources;C:\Users\dvanniekerk\AppData\Roaming\Safe Software\FME\FME Store\Formats
+2014-10-31 13:48:59|   1.7|  0.0|INFORM|Shared folders for transformers are : C:\Users\dvanniekerk\Documents\FME\Transformers;C:\Apps\FME_15194_64\transformers;C:\standalone-apps\testsuite\Transformers;C:\Users\dvanniekerk\AppData\Roaming\Safe Software\FME\FME Store\Transformers
+2014-10-31 13:48:59|   1.7|  0.0|INFORM|Shared folders for coordinate systems are : C:\Users\dvanniekerk\Documents\FME\CoordinateSystems
+2014-10-31 13:48:59|   1.7|  0.0|INFORM|Shared folders for coordinate system exceptions are : C:\Users\dvanniekerk\Documents\FME\CoordinateSystemExceptions
+2014-10-31 13:48:59|   1.7|  0.0|INFORM|Shared folders for coordinate system grid overrides are : C:\Users\dvanniekerk\Documents\FME\CoordinateSystemGridOverrides
+2014-10-31 13:48:59|   1.7|  0.0|INFORM|Shared folders for CS-MAP transformation exceptions are : C:\Users\dvanniekerk\Documents\FME\CsmapTransformationExceptions
+2014-10-31 13:48:59|   1.7|  0.0|INFORM|Shared folders for transformer categories are : C:\Users\dvanniekerk\Documents\FME\TransformerCategories
+2014-10-31 13:48:59|   1.7|  0.0|INFORM|Mapping File Identifier is: Location-based push notifications for Android and iOS - FME Cloud 2014
+2014-10-31 13:48:59|   1.7|  0.0|INFORM|FME Configuration: Reader Keyword is `FFS_1'
+2014-10-31 13:48:59|   1.7|  0.0|INFORM|FME Configuration: Writer Keyword is `MULTI_WRITER'
+2014-10-31 13:48:59|   1.7|  0.0|INFORM|FME Configuration: Writer Group Definition Keyword is `MULTI_WRITER_DEF'
+2014-10-31 13:48:59|   1.7|  0.0|INFORM|FME Configuration: Reader type is `FFS'
+2014-10-31 13:48:59|   1.7|  0.0|INFORM|FME Configuration: Writer type is `MULTI_WRITER'
+2014-10-31 13:48:59|   1.7|  0.0|INFORM|FME Configuration: No destination coordinate system set
+2014-10-31 13:48:59|   1.7|  0.0|INFORM|FME Configuration: Current working folder is `C:\Users\dvanniekerk\Dropbox (Safe Software Inc.)\git uncommited\fmepedia-safe-simple-tracker\CreateSubscriberTable'
+2014-10-31 13:48:59|   1.7|  0.0|INFORM|FME Configuration: Temporary folder is `C:\Users\DVANNI~1\AppData\Local\Temp'
+2014-10-31 13:48:59|   1.7|  0.0|INFORM|FME Configuration: FME_HOME is `C:\Apps\FME_15194_64\'
+2014-10-31 13:48:59|   1.7|  0.0|INFORM|FME Configuration: FME_BASE is 'no'
+2014-10-31 13:48:59|   1.7|  0.0|INFORM|FME Configuration: FME_MF_DIR is 'C:\Users\dvanniekerk\Dropbox (Safe Software Inc.)\git uncommited\fmepedia-safe-simple-tracker\CreateSubscriberTable/'
+2014-10-31 13:48:59|   1.7|  0.0|INFORM|FME Configuration: FME_MF_NAME is '1b_CreateSubscriberTableinPostGIS.fmw'
+2014-10-31 13:48:59|   1.7|  0.0|INFORM|FME Configuration: FME_PRODUCT_NAME is 'FME(R) 2015'
+2014-10-31 13:48:59|   1.7|  0.0|INFORM|System Status: 17.89 GB of disk space available in the FME temporary folder (C:\Users\DVANNI~1\AppData\Local\Temp)
+2014-10-31 13:48:59|   1.7|  0.0|INFORM|System Status: 128.00 TB of virtual memory available
+2014-10-31 13:48:59|   1.7|  0.0|INFORM|Operating System: Microsoft Windows 8.1 64-bit  (Build 9600)
+2014-10-31 13:48:59|   1.7|  0.0|INFORM|FME Platform: WIN64
+2014-10-31 13:48:59|   1.7|  0.0|INFORM|Locale: en_US
+2014-10-31 13:48:59|   1.7|  0.0|INFORM|Code Page: 1252  (ANSI - Latin I)
+2014-10-31 13:48:59|   1.7|  0.0|INFORM|FME Configuration: Process limit is 7.91 GB (out of 7.91 GB physical memory and 128.00 TB address space)
+2014-10-31 13:48:59|   1.7|  0.0|INFORM|FME Configuration: Start freeing memory when process usage exceeds 128.00 TB of memory or 128.00 TB of address space
+2014-10-31 13:48:59|   1.7|  0.0|INFORM|FME Configuration: Stop freeing memory when process usage is below 96.00 TB of memory and 96.00 TB of address space
+2014-10-31 13:48:59|   1.7|  0.0|INFORM|FME Configuration: Autodetermining optimal maximum number of objects in memory
+2014-10-31 13:48:59|   2.0|  0.3|INFORM|Using FFS Reader $Revision$ ( $Date$ ) to read features from FME Feature Stores in folder `C:\Users\dvanniekerk\Dropbox (Safe Software Inc.)\git uncommited\fmepedia-safe-simple-tracker\CreateSubscriberTable\'
+2014-10-31 13:48:59|   2.0|  0.0|INFORM|Using MultiWriter $Revision$ ( $Date$ ) with keyword `MULTI_WRITER' to output data (ID_ATTRIBUTE is `multi_writer_id')
+2014-10-31 13:48:59|   2.0|  0.0|INFORM|Writer output will be ordered by value of multi_writer_id
+2014-10-31 13:48:59|   2.0|  0.0|INFORM|Loaded module 'LogCount_func' from file 'C:\Apps\FME_15194_64\plugins/LogCount_func.dll'
+2014-10-31 13:49:00|   2.0|  0.0|INFORM|FME API version of module 'LogCount_func' matches current internal version (3.7 20140327)
+2014-10-31 13:49:00|   2.1|  0.1|INFORM|FME Configuration: No destination coordinate system set
+2014-10-31 13:49:00|   2.7|  0.6|INFORM|FME Configuration: Source coordinate system for reader FFS_1[FFS] set to `EPSG:4326' as read from input data
+2014-10-31 13:49:00|   2.7|  0.0|INFORM|Coordinate System `EPSG:4326' parameters: CS_NAME=`LL-WGS84' DESC_NM=`WGS84 Lat/Longs' DT_NAME=`WGS84' GROUP=`LL' MAP_SCL=`1' PROJ=`LL' QUAD=`1' SCL_RED=`1' UNIT=`DEGREE' 
+2014-10-31 13:49:01|   3.3|  0.5|INFORM|Trying to find a DYNAMIC plugin for writer named `POSTGIS'
+2014-10-31 13:49:01|   3.3|  0.0|INFORM|Loaded module 'POSTGIS' from file 'C:\Apps\FME_15194_64\plugins/postgis/POSTGIS.dll'
+2014-10-31 13:49:01|   3.3|  0.0|INFORM|FME API version of module 'POSTGIS' matches current internal version (3.7 20140327)
+2014-10-31 13:49:01|   3.3|  0.0|INFORM|FME Configuration: No destination coordinate system set
+2014-10-31 13:49:01|   3.3|  0.0|INFORM|FME API version of module 'POSTGIS' matches current internal version (3.7 20140327)
+2014-10-31 13:49:01|   3.3|  0.0|INFORM|Writer `POSTGIS_1' of type `POSTGIS' using group definition keyword `POSTGIS_1_DEF'
+2014-10-31 13:49:01|   3.3|  0.0|INFORM|FME API version of module 'POSTGIS' matches current internal version (3.7 20140327)
+2014-10-31 13:49:01|   3.3|  0.0|INFORM|Opening POSTGIS writer for dataset 'gisdb'...
+2014-10-31 13:49:01|   3.3|  0.0|INFORM|PostGIS client encoding: 'UTF8'
+2014-10-31 13:49:03|   3.3|  0.0|INFORM|PostgreSQL 9.1.14 on x86_64-unknown-linux-gnu, compiled by gcc (Ubuntu/Linaro 4.6.3-1ubuntu5) 4.6.3, 64-bit
+2014-10-31 13:49:03|   3.3|  0.0|INFORM|2.1 USE_GEOS=1 USE_PROJ=1 USE_STATS=1
+2014-10-31 13:49:04|   3.3|  0.0|INFORM|Testing for the existence of table 'safe_notification_tutorial.Subscriber'...
+2014-10-31 13:49:05|   3.3|  0.0|INFORM|Creating table 'safe_notification_tutorial.Subscriber'...
+2014-10-31 13:49:05|   3.3|  0.0|INFORM|POSTGIS Writer: Creating 'unquoted WKB' geometry processor for feature type 'safe_notification_tutorial.Subscriber'
+2014-10-31 13:49:05|   3.3|  0.0|INFORM|POSTGIS Writer: Creating 'streaming Bulk Copy' feature type processor for feature type 'safe_notification_tutorial.Subscriber'
+2014-10-31 13:49:05|   3.3|  0.0|INFORM|Emptying factory pipeline
+2014-10-31 13:49:05|   3.3|  0.0|INFORM|=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+2014-10-31 13:49:05|   3.3|  0.0|INFORM|Feature output statistics for `FFS' writer using keyword `W_1':
+2014-10-31 13:49:05|   3.3|  0.0|INFORM|Creating 'GIST' index on column "geom" of table 'safe_notification_tutorial.Subscriber'...
+2014-10-31 13:49:05|   3.3|  0.0|INFORM|Vacuuming and analyzing table 'safe_notification_tutorial.Subscriber'...
+2014-10-31 13:49:05|   3.3|  0.0|INFORM|Successfully closed POSTGIS database writer
+2014-10-31 13:49:05|   3.3|  0.0|INFORM|=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+2014-10-31 13:49:05|   3.3|  0.0|INFORM|Feature output statistics for `POSTGIS' writer using keyword `POSTGIS_1':
+2014-10-31 13:49:05|   3.3|  0.0|INFORM|Translation was SUCCESSFUL with 0 warning(s) (1 feature(s) output)
+2014-10-31 13:49:05|   3.3|  0.0|INFORM|FME Session Duration: 8.0 seconds. (CPU: 1.0s user, 0.8s system)
+2014-10-31 13:49:05|   3.3|  0.0|INFORM|END - ProcessID: 9036, peak process memory usage: 80288 kB, current process memory usage: 80236 kB

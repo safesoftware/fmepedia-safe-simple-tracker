@@ -1,0 +1,14 @@
+{
+    "msg_content_type": "text/plain",
+    "msg_last_name": "Prime",
+    "fns_wkt_geom": "POINT (-122.922479 49.200907)",
+    "msg_first_name": "Optimus",
+    "msg_url": "http://safe.com",
+    "msg_subject": "Subjectivity",
+    "fns_version": "1.0",
+    "fns_op": "report",
+    "msg_content": "Detailed",
+    "fns_sent": "2014-10-29T16:18:05.000-07:00",
+    "msg_from": "foo@example.com",
+    "fns_type": "android"
+}

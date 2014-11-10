@@ -1,0 +1,6 @@
+{"name":"locations","type":"FeatureCollection"
+,"features":[
+{"type":"Feature","geometry":{"type":"Point","coordinates":[-122.857398,49.137492]},"properties":{"msg_content":"Detailed messages!","msg_first_name":"Optimus","msg_from":"bar@example.com","kml_name":"bar@example.com","msg_last_name":"Prime","msg_subject":"Stuff","msg_url":"http://safe.com","fns_sent":"20141031115550","fns_type":"android"}}
+,{"type":"Feature","geometry":{"type":"Point","coordinates":[-122.922479,49.200907]},"properties":{"msg_content":"Detailed messages!","msg_first_name":"Optimus","msg_from":"foo@example.com","kml_name":"foo@example.com","msg_last_name":"Prime","msg_subject":"Subjectivity","msg_url":"http://safe.com","fns_sent":"20141029164448","fns_type":"android"}}
+,{"type":"Feature","geometry":{"type":"Point","coordinates":[-90.51777,38.627358]},"properties":{"msg_content":"Broken lashing wire","msg_first_name":"Brek","msg_from":null,"kml_name":null,"msg_last_name":null,"msg_subject":"DPR: Broken Lashing Wire","msg_url":null,"fns_sent":"20141031054932","fns_type":"ios"}}
+]}
