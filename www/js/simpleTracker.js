@@ -1,11 +1,11 @@
 function initialize() {
 	FMEServer.init({
 		server: "https://bluesky-safe-software.fmecloud.com",
-		token : "0a60a42ef7444c946bf71a6843c79e6f562bd70b"
+		token : "b4494360920f37c4ced315182bd5a976c348a2e7"
 	});
 
   
-  var token = "0a60a42ef7444c946bf71a6843c79e6f562bd70b";
+  var token = "b4494360920f37c4ced315182bd5a976c348a2e7";
   
   var msgcount = document.getElementById('msgcount');
   
