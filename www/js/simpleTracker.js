@@ -9,6 +9,10 @@ function initialize() {
   
   var msgcount = document.getElementById('msgcount');
   
+  var incrMsg = function() {
+    msgcount.textContent = parseInt(msgcount.textContent) + 1;
+  };
+  
 	var myLatlng = new google.maps.LatLng(49.25,-123);
 
 	var myOptions = {
@@ -26,6 +30,10 @@ function initialize() {
 	var map = new google.maps.Map(document.getElementById("map_canvas"), myOptions);
   
   map.data.loadGeoJson('https://bluesky-safe-software.fmecloud.com/fmedatastreaming/safe-notification-tutorial/retrieveEventListing.fmw?token='+token, { idPropertyName: "msg_from" });
+  
+  map.data.addListener('addfeature', function(event) {
+    incrMsg();
+  });
   
   map.data.setStyle(function(feature) {
     var title = '';
@@ -55,7 +63,7 @@ function initialize() {
 		ws.onmessage = function (evt) {
 
       
-      msgcount.textContent = parseInt(msgcount.textContent) + 1;
+      incrMsg();
       
 			var data = evt.data;
 			dataObj = JSON.parse(data);
@@ -78,7 +86,7 @@ function initialize() {
 		};
 
 	} else {
-		alert("Your broswer does not support WebSockets. Try using the latest Firefox, Chrome or Safari browser.");
+		alert("Your browser does not support WebSockets. Try using the latest Firefox, Chrome or Safari browser.");
 
 	};
 
